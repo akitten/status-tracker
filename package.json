@@ -1,0 +1,32 @@
+{
+  "name": "status-tracker",
+  "version": "1.0.0",
+  "description": "Basic app to track our runners",
+  "main": "lib/start.js",
+  "scripts": {
+    "start": "node lib/start.js",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/tape/bin/tape ./test/*test.js && istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "coverage": "istanbul cover ./node_modules/.bin/tape ./tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akitten/status-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akitten/status-tracker/issues"
+  },
+  "homepage": "https://github.com/akitten/status-tracker#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^12.1.0",
+    "hoek": "^3.0.4",
+    "inert": "^3.2.0",
+    "vision": "^4.0.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "tape": "^4.4.0"
+  }
+}
